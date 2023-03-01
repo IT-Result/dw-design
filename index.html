@@ -1,275 +1,57 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 
-<head lang="ru">
+<head>
+	<title>Главная</title>
 	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20230301063016">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Верстка «digwell»</title>
 </head>
 
 <body>
-	<div class="rootpage">
-		<div class="rootpage__pages">
-			<h1>Верстка «digwell»</h1>
-			<div class="rootpage__info">
-				Особенности проекта
-			</div>
-			<h2>Готовые страницы:</h2>
-			<ol class="rootpage__list">
-				<li><a target="_blank" href="home.html">Главная</a></li>
-			</ol>
-			<h2>Popups:</h2>
-			<ol class="rootpage__list">
-				<li><a target="_blank" href="index.html#"></a></li>
-			</ol>
-		</div>
-		<div class="rootpage__links">
-			<div class="rootpage__links-box">
-				<div class="rootpage__tnx">
-					<h2>Спасибо за заказ!</h2>
-					<p>Буду рад хорошему отзыву.</p>
-					<p>Обращайтесь еще!</p>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__menu menu">
+					<div class="menu__burger">
+						<button type="button" class="menu__icon icon-menu"><span></span></button>
+					</div>
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item"><a href="#" class="menu__link">Главная</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">Блог</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">Кейсы</a></li>
+						</ul>
+						<div class="menu__contacts contacts">
+							<a href="tel:+74212401546" class="contacts__item"><img src="img/iconsfonts/phone.svg" alt="phone">+7 4212 40-15-46</a>
+							<a href="mailto:info@itresult.ru" class="contacts__item"><img src="img/iconsfonts/mail.svg" alt="phone">info@itresult.ru</a>
+							<a href="" class="contacts__item"><img src="img/iconsfonts/loc.svg" alt="phone">г.&nbsp;Хабаровск ул.&nbsp; Комсомольская 43,
+								офис 4</a>
+						</div>
+					</nav>
 				</div>
-				<div class="rootpage__contacts">
-					<h2>Мои контакты:</h2>
-					<p>Почта: <a href="mailto:aleh.antukh@gmail.com">website@azraelgf.ru</a></p>
-					<p>Телеграм: <a href="https://t.me/azraelgf" target="_blank">@azraelgf</a></p>
-					<p>WhatsApp: <a href="https://wa.me/375298977987" target="_blank">+375298977987</a></p>
+				<a href="/" class="header__logo logo"><img src="img/logo.png" alt="Logo"></a>
+				<div class="header__menu-right menu-right">
+					<ul class="menu-right__list">
+						<li class="menu-right__item"><a href="#" class="menu-right__link" data-da=".menu__list, 767.98">О нас</a></li>
+						<li class="menu-right__item"><a href="#" class="menu-right__link">Контакты</a></li>
+					</ul>
 				</div>
 			</div>
-			<div class="social-img">
-				<p>Просканируйте этот код с помощью камеры, чтобы получить мой номер</p>
-				<img src="https://i.ibb.co/BBB5xvY/image-26.jpg" alt="whatsApp">
-				<img src="https://i.ibb.co/BBdfLKP/image-27.jpg" alt="telegram">
-			</div>
-		</div>
+		</header>
 
+		<main class="page">
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+			</div>
+		</footer>
 	</div>
+	<script src="js/app.min.js?_v=20230301063016"></script>
 </body>
-<style>
-	@import url("https://fonts.googleapis.com/css?family=Montserrat:regular,700&display=swap");
-
-	*,
-	*::before,
-	*::after {
-		padding: 0;
-		margin: 0;
-		border: 0;
-		box-sizing: border-box;
-	}
-
-	html,
-	body {
-		height: 100%;
-		margin: 0;
-		padding: 0;
-		min-width: 320px;
-		width: 100%;
-		color: #fff;
-		background-color: #121038;
-	}
-
-	body {
-		font-family: Montserrat, sans-serif;
-		line-height: 1;
-		font-size: 1rem;
-	}
-
-	a {
-		text-decoration: underline;
-		color: #fff100
-	}
-
-	a:visited {
-		text-decoration: underline;
-		color: #aaa768;
-	}
-
-	a:hover {
-		text-decoration: none;
-	}
-
-	ul li {
-		list-style: none;
-	}
-
-	img {
-		vertical-align: top;
-	}
-
-	.rootpage {
-		padding: 30px;
-	}
-
-	.rootpage__pages {
-		flex: 1 1 auto;
-		display: flex;
-		flex-direction: column;
-		align-items: flex-start;
-	}
-
-	.rootpage__links {
-		display: grid;
-		gap: 30px;
-		justify-content: center;
-	}
-
-	.rootpage__links-box {
-		display: flex;
-		gap: 30px;
-	}
-
-	.social-img {
-		display: grid;
-		grid-template-columns: repeat(2, 260px);
-		align-items: center;
-		justify-content: center;
-		gap: 30px;
-	}
-
-	.social-img img {
-		width: 260px;
-		height: 300px;
-	}
-
-	.social-img p {
-		text-align: center;
-		font-size: .8rem;
-		opacity: .4;
-	}
-
-	h1 {
-		color: #fff100;
-		font-size: 2.5rem;
-		margin: 0 0 1.25rem 0;
-	}
-
-	h2 {
-		color: #fff100;
-		font-size: 1.25rem;
-		margin: 0 0 1rem 0;
-	}
-
-	.rootpage__info {
-		line-height: 140%;
-		margin: 0 0 1.5rem 0;
-	}
-
-	.rootpage__list {
-		margin: 0 0 2.25rem 1.25rem;
-	}
-
-	.rootpage__list li:not(:last-child) {
-		margin: 0 0 15px 0;
-	}
-
-	.rootpage__contacts,
-	.rootpage__tnx {
-		padding: 20px 65px;
-		line-height: 140%;
-		max-width: 600px;
-	}
-
-
-	.rootpage__contacts {
-		position: relative;
-	}
-
-	.rootpage__tnx:after,
-	.rootpage__contacts:after {
-		position: absolute;
-		filter: blur(.5rem);
-		opacity: .8;
-		content: '';
-		left: 0;
-		top: 0;
-		width: 100%;
-		height: 100%;
-	}
-
-	.rootpage__contacts:after {
-		background: #2d3fc2;
-	}
-
-	.rootpage__contacts a {
-		color: #fff100;
-	}
-
-	.rootpage__tnx {
-		position: relative;
-	}
-
-	.rootpage__tnx:after {
-		background: #065c08;
-	}
-
-	h2,
-	p {
-		position: relative;
-		z-index: 2;
-	}
-
-	@media (min-width: 767px) {
-		.social-img p {
-			grid-column: span 2;
-		}
-	}
-
-	@media (max-width: 767px) {
-		.rootpage {
-			padding: 30px 15px;
-		}
-
-		h1 {
-			font-size: 1.85rem;
-			margin: 0 0 1.25rem 0;
-		}
-
-		h2 {
-			font-size: 1.125rem;
-			margin: 0 0 1rem 0;
-		}
-
-		.rootpage__contacts,
-		.rootpage__tnx {
-			padding: 20px;
-		}
-
-		.rootpage__links-box {
-			flex-wrap: wrap;
-			justify-content: center;
-			text-align: center;
-		}
-
-		.social-img {
-			justify-items: center;
-			grid-template-columns: 1fr;
-		}
-	}
-
-	@media (max-width: 480px) {
-
-		.rootpage__tnx,
-		.rootpage__contacts {
-			width: 100%;
-			padding: 20px;
-			font-size: 14px;
-		}
-
-		h2 {
-			margin-bottom: .55rem;
-		}
-
-		.rootpage__tnx,
-		.rootpage__contacts {
-			text-align: center;
-		}
-
-		.social-img img {
-			width: 100%;
-			height: auto;
-		}
-	}
-</style>
 
 </html>
