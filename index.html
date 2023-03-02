@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230302160244">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230302171754">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,9 +22,9 @@
 					</div>
 					<nav class="menu__body">
 						<ul class="menu__list">
-							<li class="menu__item"><a href="#" class="menu__link">Главная</a></li>
+							<li class="menu__item"><a href="#" class="menu__link" data-goto=".hero">Главная</a></li>
 							<li class="menu__item"><a href="#" class="menu__link">Блог</a></li>
-							<li class="menu__item"><a href="#" class="menu__link">Кейсы</a></li>
+							<li class="menu__item"><a href="#" class="menu__link" data-goto=".case">Кейсы</a></li>
 						</ul>
 						<div class="menu__contacts contacts">
 							<a href="tel:+74212401546" class="contacts__item"><img src="img/iconsfonts/phone.svg" alt="phone">+7 4212 40-15-46</a>
@@ -37,8 +37,8 @@
 				<a href="/" class="header__logo logo"><img src="img/logo.png" alt="Logo"></a>
 				<div class="header__menu-right menu-right">
 					<ul class="menu-right__list">
-						<li class="menu-right__item"><a href="#" class="menu-right__link" data-da=".menu__list, 767.98">О нас</a></li>
-						<li class="menu-right__item"><a href="#" class="menu-right__link">Контакты</a></li>
+						<li class="menu-right__item"><a href="#" class="menu-right__link" data-goto=".about" data-da=".menu__list, 767.98">О нас</a></li>
+						<li class="menu-right__item"><a href="#" class="menu-right__link" data-goto=".map">Контакты</a></li>
 					</ul>
 				</div>
 			</div>
@@ -52,7 +52,7 @@
 							Обучим Оцифровывать ваш&nbsp;бизнес
 						</h1>
 						<div class="hero__text">Под ключ <span>за 3 месяца</span></div>
-						<button class="hero__btn button" type="button"><span>Получить консультацию</span></button>
+						<button class="hero__btn button" type="button" data-goto=".feedback"><span>Получить консультацию</span></button>
 					</div>
 					<div class="hero__img -ibg_contain">
 						<picture>
@@ -280,7 +280,8 @@
 										var s=d.createElement('script');s.async=true;s.src=u+'?'+(Date.now()/180000|0);
 										var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
 									})(window,document,'https://cdn-ru.bitrix24.ru/b18340788/crm/form/loader_22.js');
-								</script>							</div>
+								</script>
+							</div>
 							<div class="feedback__img img-feedback">
 								<div class="img-feedback__img -ibg">
 									<img src="img/sally.png" alt="Image">
@@ -363,14 +364,53 @@
 					</div>
 				</div>
 			</section>
+			<section class="map">
+				<div class="map__contacts">
+					<div class="map__logo logo">
+						<img src="img/logo.png" alt="Image">
+					</div>
+					<div class="contacts">
+						<a href="tel:+74212401546" class="contacts__item"><img src="img/iconsfonts/phone.svg" alt="phone">+7 4212 40-15-46</a>
+						<a href="mailto:info@itresult.ru" class="contacts__item"><img src="img/iconsfonts/mail.svg" alt="phone">info@itresult.ru</a>
+						<a href="" class="contacts__item"><img src="img/iconsfonts/loc.svg" alt="phone">г.&nbsp;Хабаровск ул.&nbsp; Комсомольская 43,
+							офис 4</a>
+					</div>
+				</div>
+				<iframe class="map__wrapper" src="https://yandex.ru/map-widget/v1/?um=constructor%3A387cb23410c79a92124f7fb0e95a09db040a2f1db9f6b72646157fec83f0f848&amp;source=constructor" frameborder="0"></iframe>
+			</section>
 		</main>
 		<footer class="footer">
 			<div class="footer__container">
+				<div class="footer__top top-footer">
+					<a href="/" class="footer__logo logo"><img src="img/logo.png" alt="Logo"></a>
+					<div class="top-footer__menu footer-menu">
+						<nav class="footer-menu__body">
+							<ul class="footer-menu__list">
+								<li class="footer-menu__item"><a href="#" class="footer-menu__link" data-goto=".hero">Главная</a></li>
+								<li class="footer-menu__item"><a href="#" class="footer-menu__link">Блог</a></li>
+								<li class="footer-menu__item"><a href="#" class="footer-menu__link" data-goto=".case">Кейсы</a></li>
+								<li class="footer-menu__item"><a href="#" class="footer-menu__link" data-goto=".about">О нас</a></li>
+								<li class="footer-menu__item"><a href="#" class="footer-menu__link" data-goto=".map">Контакты</a></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="top-footer__action">
+						<button class="top-footer__btn button" type="button" data-goto=".feedback"><span>Хочу звонок</span></button>
+						<a href="tel:+74212401546">+7 4212 40-15-46</a>
+					</div>
+				</div>
+				<div class="footer__bottom bottom-footer">
+					<div class="bottom-footer__block">
+						<a href="" class="bottom-footer__link">Политика конфедициальности</a>
+						<a href="" class="bottom-footer__link">Cоглашение на обработку персональных данных</a>
+					</div>
+					<a href="mailto:info@itresult.ru" class="bottom-footer__mail">info@itresult.ru</a>
+				</div>
 			</div>
 		</footer>
-	</div>
-	<script src="js/app.min.js?_v=20230302160244"></script>
 
+	</div>
+	<script src="js/app.min.js?_v=20230302171754"></script>
 </body>
 
 </html>
