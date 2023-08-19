@@ -3935,7 +3935,7 @@
         }));
     };
     function videoGenerate(video) {
-        const btn = video.querySelector(".video-block__img"), videoId = btn.dataset.videoId, container = video.querySelector(".video-block__inner");
+        const btn = video.querySelector(".video-btn"), videoId = btn.dataset.videoId, container = video.querySelector(".video-block__inner");
         btn.addEventListener("click", (() => {
             const iframe = iframeGenerate(videoId);
             container.innerHTML = "";

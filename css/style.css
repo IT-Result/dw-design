@@ -215,6 +215,7 @@ body.body-main {
 }
 
 .video-slider .swiper-controls {
+  pointer-events: none;
   margin-top: 0;
   position: absolute;
   top: 50%;
@@ -246,6 +247,7 @@ body.body-main {
 }
 
 .video-slider .swiper-button {
+  pointer-events: auto;
   width: 3.29375rem;
   height: 3.29375rem;
   border: 0;
@@ -567,6 +569,18 @@ ol li:before {
 
 .video-slider__body {
   position: relative;
+}
+
+.video-btn {
+  position: absolute;
+  width: 4.78125rem;
+  height: 3.1875rem;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 2;
 }
 
 .form {
@@ -1662,7 +1676,7 @@ body::after {
 }
 
 .trust {
-  padding: 6.375rem 0;
+  padding: 0 0 6.375rem;
 }
 
 .trust__title {
@@ -4694,6 +4708,11 @@ swiper-container:not(.swiper-watch-progress) .swiper-lazy-preloader {
 
   .video-block iframe {
     width: 100%;
+  }
+
+  .video-btn {
+    width: 3.1875rem;
+    height: 2.125rem;
   }
 
   .button span {
