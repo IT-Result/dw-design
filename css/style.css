@@ -581,6 +581,7 @@ ol li:before {
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   z-index: 2;
+  opacity: 0.7;
 }
 
 .form {
@@ -4861,7 +4862,7 @@ swiper-container:not(.swiper-watch-progress) .swiper-lazy-preloader {
   }
 
   .trust {
-    padding: 2.65625rem 0;
+    padding: 0 0 2.65625rem;
   }
 
   .trust__title {
