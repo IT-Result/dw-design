@@ -3932,8 +3932,6 @@
             const closeLink = document.querySelector(".content-menu-closed");
             const parent = targetElement.parentNode.parentNode;
             parent.contains(closeLink) ? parent.classList.toggle("content-menu-closed") : parent.classList.toggle("content-menu-closed");
-            parent.contains(closeLink) ? console.log("da") : console.log("net");
-            console.log(parent);
         }
     }
     const videoInit = selector => {
