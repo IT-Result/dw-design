@@ -200,7 +200,7 @@
                 if (!el.closest("[data-spollers]")) spollersClose.forEach((spollerClose => {
                     const spollersBlock = spollerClose.closest("[data-spollers]");
                     if (spollersBlock.classList.contains("_spoller-init")) {
-                        const spollerSpeed = spollersBlock.dataset.spollersSpeed ? parseInt(spollersBlock.dataset.spollersSpeed) : 500;
+                        const spollerSpeed = spollersBlock.dataset.spollersSpeed ? parseInt(spollersBlock.dataset.spollersSpeed) : 700;
                         spollerClose.classList.remove("_spoller-active");
                         _slideUp(spollerClose.nextElementSibling, spollerSpeed);
                     }
@@ -3926,6 +3926,11 @@
         if (targetElement.closest(".btn-close")) {
             const parent = targetElement.parentNode;
             parent ? parent.remove() : null;
+        }
+        if (targetElement.closest(".content-menu__arrow")) {
+            const closeLink = document.querySelector(".content-menu-open");
+            const parent = targetElement.parentNode.parentNode;
+            parent.contains(closeLink) ? parent.classList.toggle("content-menu-open") : parent.classList.toggle("content-menu-open");
         }
     }
     const videoInit = selector => {
