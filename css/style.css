@@ -2573,14 +2573,6 @@ body::after {
   transition: background-color 0.3s;
 }
 
-.content-menu__link._active {
-  background-color: #E1EAF4;
-}
-
-.content-menu__link._active img {
-  rotate: 90deg;
-}
-
 .content-menu__link img {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 12px;
@@ -2603,6 +2595,18 @@ body::after {
 }
 
 .content-menu__arrow._active img {
+  rotate: 90deg;
+}
+
+.content-menu-active > .content-menu__link {
+  background-color: #E1EAF4;
+}
+
+.content-menu-active > .content-menu__link > .content-menu__arrow img {
+  rotate: 90deg;
+}
+
+.content-menu-open > .content-menu__link > .content-menu__arrow img {
   rotate: 90deg;
 }
 
