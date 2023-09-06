@@ -3928,10 +3928,9 @@
             parent ? parent.remove() : null;
         }
         if (targetElement.closest(".content-menu__arrow")) {
-            targetElement.classList.toggle("_active");
-            const closeLink = document.querySelector(".content-menu-closed");
+            const closeLink = document.querySelector(".content-menu-open");
             const parent = targetElement.parentNode.parentNode;
-            parent.contains(closeLink) ? parent.classList.toggle("content-menu-closed") : parent.classList.toggle("content-menu-closed");
+            parent.contains(closeLink) ? parent.classList.toggle("content-menu-open") : parent.classList.toggle("content-menu-open");
         }
     }
     const videoInit = selector => {
