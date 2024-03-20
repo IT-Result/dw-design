@@ -64,6 +64,13 @@
     height: 2.25rem;
 }
 
+.contacts-map {
+    flex-direction: row;
+    display: flex ;
+    column-gap: 7.5rem;
+}
+
+
 @media (max-width: 850px) {
     .social-map__item {
         width: 2.625rem;
@@ -104,7 +111,11 @@
         flex-direction: column;
     }
 }
-
+@media(max-width:768px){
+    .contacts-map {
+        flex-direction: column;
+    }
+}
 @media (max-width: 450px) {
     .social-map {
         align-items: start;
