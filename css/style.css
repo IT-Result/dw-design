@@ -7662,3 +7662,148 @@ swiper-container:not(.swiper-watch-progress) .swiper-lazy-preloader {
     text-decoration: underline;
   }
 }
+
+
+
+/* стили для добавленных ссылок */
+.social-map {
+  margin-top: 45px;
+  display: flex;
+  /* align-items: center; */
+}
+
+.social-map__text {
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 500;
+  color: rgba(44, 44, 44, 1);
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: auto;
+  margin-right: 2px;
+}
+
+.social-map__row {
+  display: flex;
+  gap: 24px;
+}
+
+.social-map__item {
+  width: 4rem;
+  height: 4rem;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+.social-map__item:hover {
+  opacity: 0.9;
+}
+
+.social-map__item img {
+  width: 4rem;
+  height: 4rem;
+}
+
+.social-map__str img {
+  width: 7.5rem;
+}
+
+.bottom-footer__social {
+  display: flex;
+  gap: 16px;
+}
+
+.bottom-footer__item {
+  width: 2.25rem;
+  height: 2.25rem;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+.bottom-footer__item:hover {
+  opacity: 0.9;
+}
+
+.bottom-footer__item img {
+  width: 2.25rem;
+  height: 2.25rem;
+}
+
+.contacts-map {
+  flex-direction: row;
+  display: flex ;
+  column-gap: 7.5rem;
+}
+
+
+@media (max-width: 850px) {
+  .social-map__item {
+      width: 2.625rem;
+      height: 2.625rem;
+  }
+  .social-map__item img {
+      width: 2.625rem;
+      height: 2.625rem;
+  }
+  .social-map {
+      align-items: center;
+  }
+  .social-map__text {
+      margin-bottom: 1.25rem;
+  }
+  .social-map__str img {
+      width: 6.25rem;
+  }
+  .social-map__row {
+      gap: 1.125rem;
+  }
+}
+
+@media (max-width: 820px) {
+  .footer__logo {
+      display: none;
+  }
+  .bottom-footer {
+      flex-direction: column;
+  }
+  .top-footer {
+      flex-direction: column;
+  }
+  .footer-menu__list {
+      flex-direction: column;
+  }
+  .bottom-footer__block {
+      flex-direction: column;
+  }
+}
+@media(max-width:768px){
+  .contacts-map {
+      flex-direction: column;
+  }
+}
+@media (max-width: 450px) {
+  .social-map {
+      align-items: start;
+      flex-direction: column;
+  }
+  .social-map__row {
+      margin-left: auto;
+      margin-right: 1.875rem;
+  }
+  .social-map__str {
+      margin-left: auto;
+      margin-right: auto;
+      transform: rotate(30deg);
+  }
+  .social-map__text {
+      margin-bottom: 0;
+  }
+}
+
+@media (max-width: 385px) {
+  .social-map__row {
+      margin-right: 0;
+  }
+}
+
+
